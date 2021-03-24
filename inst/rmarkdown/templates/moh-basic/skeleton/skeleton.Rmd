@@ -1,0 +1,63 @@
+---
+title: "Untitled MoH report"
+author: "Author"
+date: "`r format(Sys.Date(), '%d/%m/%Y')`"
+document_width: '800px'
+output: MoHReportR::html_document_moh
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Preamble
+
+This document lays the groundwork for a template MoH HTML report. This is still
+a document under development. The YAML controls some other settings than commonly
+encountered with default Rmarkdown documents.  
+
+## YAML
+
+### template
+
+To use the template, include this;
+
+```
+output:
+  html_document:
+    template: moh_pandoc_template.html
+```
+
+### logo
+
+A logo will be placed in the top right of the document next to the title (in a
+flexbox). A root option `logo` with 2 options exist; `image` is the image file and
+`height` is the display height in px.
+
+```
+logo: 
+  image: 'path_to_logo.png'
+  height: 60
+```
+
+### document_width
+
+This controls the width of the document body. An valid values to the CSS width
+parameter work here; '100px', '100%', '100vw'
+
+## Regular R code
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE, out.width='100%'}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
