@@ -7,7 +7,7 @@
 html_document_moh(...)
 }
 \arguments{
-\item{...}{passed onto \code {rmarkdown::html_document}}
+\item{...}{passed onto \code{rmarkdown::html_document}}
 }
 \description{
 Format for converting from R Markdown to an HTML document.

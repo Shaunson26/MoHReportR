@@ -2,7 +2,7 @@
 #'
 #' Format for converting from R Markdown to an HTML document.
 #'
-#' @param ... passed onto \code {rmarkdown::html_document}
+#' @param ... passed onto \code{rmarkdown::html_document}
 #'
 #' @export
 html_document_moh <- function(...) {
