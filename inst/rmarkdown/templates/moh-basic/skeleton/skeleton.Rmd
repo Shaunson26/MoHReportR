@@ -19,14 +19,14 @@ encountered with default Rmarkdown documents.
 
 ## YAML
 
-### template
+### output
 
-To use the template, include this;
+This uses the `MoHReportR::html_document_moh()` function to incorporate thematic
+files to style the HTML
 
 ```
-output:
-  html_document:
-    template: moh_pandoc_template.html
+output: output: MoHReportR::html_document_moh
+
 ```
 
 ### logo
@@ -44,7 +44,8 @@ logo:
 ### document_width
 
 This controls the width of the document body. An valid values to the CSS width
-parameter work here; '100px', '100%', '100vw'
+parameter work here; '100px', '100%', '100vw'. Default is `800px;`. The CSS style
+`margin:auto;` is always included to center the document body.
 
 ## Regular R code
 
