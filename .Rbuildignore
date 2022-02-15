@@ -1,4 +1,5 @@
-^MoHReportR\.Rproj$
-^\.Rproj\.user$
+^.Rproj$
+^.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
+template-screenshot.PNG

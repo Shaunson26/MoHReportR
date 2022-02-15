@@ -117,6 +117,10 @@ group_ages(ages = 1:100, by=10, max_age=50)
 
 ## RMarkdown templates
 
+`MoHReportR` provides an R markdown template that uses the NSW
+Government branding styles (<https://www.nsw.gov.au/branding>). This
+includes the Montserrat font and a corporate logo.
+
 After installation, you will be able to select MoH templates from the
 file menu.
 
@@ -124,3 +128,5 @@ file menu.
 
 This will open a R Markdown template from the MoHReportR package. Knit
 this document to see the template output.
+
+![template screenshot](template-screenshot.PNG)
