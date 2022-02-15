@@ -3,4 +3,7 @@
 export(group_ages)
 export(html_document_moh)
 export(logit2prob)
+export(moh_colours)
 export(prob2logit)
+export(scale_colour_moh)
+export(scale_fill_moh)
