@@ -26,19 +26,15 @@ files to style the HTML
 
 ```
 output: MoHReportR::html_document_moh
-
 ```
 
-### logo
+### logo and co-brand
 
-A logo will be placed in the top right of the document next to the title (in a
-flexbox). A root option `logo` with 2 options exist; `image` is the image file and
-`height` is the display height in px.
+There is a NSW Government logo at the top right of the document with an optional
+co-brand title. Remove `co-brand` line if not required.
 
 ```
-logo: 
-  image: 'path_to_logo.png'
-  height: 60
+co-brand: "Co-brand title"
 ```
 
 ### document_width

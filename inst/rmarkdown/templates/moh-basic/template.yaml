@@ -1,4 +1,3 @@
 name: MoH basic template
-description: >
-   A basic MoH Rmarkdown template
+description: A basic MoH Rmarkdown template
 create_dir: FALSE

@@ -7,24 +7,13 @@
 #' @export
 html_document_moh <- function(...) {
 
-  resource <- function(name) {
-    if (missing(name)){
+  pandoc_resource_path <-
+    c("--resource-path",
       system.file("rmarkdown/templates/moh-basic/resources", package = "MoHReportR")
-    } else {
-      system.file("rmarkdown/templates/moh-basic/resources", name, package = "MoHReportR")
-    }
-  }
+    )
 
-
-  pandoc_resource_arg <- function(x){
-    c("--resource-path", x)
-  }
-
-  rmarkdown::html_document(template = resource('default.html'),
-                           css = c(resource('markdown.css'),
-                                   resource('moh_stylesheet.css')))
-                           #pandoc_args = c(pandoc_resource_arg(getwd()),
-                            #               pandoc_resource_arg(resource())))
-
+  rmarkdown::html_document(template = 'default.html',
+                           css = c('markdown.css', 'moh_stylesheet.css'),
+                           pandoc_args = pandoc_resource_path)
 
 }

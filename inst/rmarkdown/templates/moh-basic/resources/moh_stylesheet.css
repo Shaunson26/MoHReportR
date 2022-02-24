@@ -13,42 +13,55 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'public-sans';
+    src: url('PublicSans-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 body {
-    font-family: montserratregular, Arial, Helvetica, sans-serif;
+    font-family: public-sans, montserratregular, Arial, Helvetica, sans-serif;
+    background-color: white;
+    font-size: 14px;
+    padding: 16px;
+    max-width: 1200px;
+    margin: auto;
 }
 
 p {
     text-align: justify;
+    line-height: 1.25em;
 }
 
-.title-row {
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-    align-items: center;
-    /*border: 1px solid pink;*/
+.co-brand {
+    font-size: 2.4em;
+    font-family: public-sans, Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    color: #002664;
 }
 
-
-.top-logo {
-    /*height: 60px;
-    /*border: 1px solid blue;
-    font-size: 2.2em;
-    margin-block-start: 0.67em;*/
+h1 {
+    font-size:2.4em;
+    font-family: public-sans, Arial, Helvetica, sans-serif;
+    text-align: center;
+    /*color: #6ECBD2*/
+    color: black;
 }
 
-.title, .author {
-    margin-bottom: 0;
+h2 {
+    font-size:1.6em;
+    /*color: #374C8C;*/
+    color: #002664;
+
 }
 
-.author {
-    /*margin-block-start: 0.33em;*/
-}
-
-.hr-title {
-    width: 97.5%;
-    border-color: #002664;
-    border-width: 1px;
+h3 {
+    font-size:1.2em;
+    /*color: #3B767B;*/
+    color: black;
 }
 
 code {
