@@ -15,11 +15,11 @@ A number of colours from https://www.digital.nsw.gov.au/design-system/style/colo
 }
 \section{Functions}{
 \itemize{
-\item \code{scale_fill_moh}: Scale fill
+\item \code{scale_fill_moh()}: Scale fill
 
-\item \code{scale_colour_moh}: Scale color
+\item \code{scale_colour_moh()}: Scale color
+
 }}
-
 \examples{
 
 require(ggplot2)

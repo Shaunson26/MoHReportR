@@ -2,7 +2,7 @@
 #'
 #' Group numeric ages into a factor using base::cut
 #'
-#' @param x a numeric vector
+#' @param ages a numeric vector of ages
 #' @param by age interval breaks
 #' @param max_age maximum age after which ages are grouped into a max_age+ category e.g 100+
 #'
@@ -19,6 +19,10 @@ group_ages <- function(ages, by = 1, max_age = 100){
             'max_age must be numeric' = is.numeric(max_age),
             'by must be a single value' = length(max_age) == 1,
             'by must be numeric' = is.numeric(by))
+
+  if (any(ages < 0)){
+    warning('Some input values are < 0. These wil be returned as NA')
+  }
 
   breaks <- seq(0, max_age, by = by)
   labels <- sprintf('%s-%s', breaks, c(breaks[-1] - 1, '+'))

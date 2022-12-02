@@ -11,19 +11,19 @@
 #'
 #' @examples
 #' # show colours and names
-#' moh_colours(show_colours = T)
+#' moh_colours(show_colours = TRUE)
 #'
 #' # Return all colours
-#' moh_colours() -> all ten colours
+#' moh_colours() # all ten colours
 #'
 #' # Return first 4 colours
-#' moh_colours(1:4) -> first 4 colours
+#' moh_colours(1:4) # first 4 colours
 #'
 #' # Return colours by name
-#' moh_colours(c('darkBlue', 'red')) -> colours by name ()
+#' moh_colours(c('darkBlue', 'red')) # colours by name ()
 #'
 #' @export
-moh_colours = function(..., show_colours = F){
+moh_colours = function(..., show_colours = FALSE){
 
   moh_palette = c(darkBlue = '#002664',
                   red = '#D7153A',
@@ -37,20 +37,27 @@ moh_colours = function(..., show_colours = F){
                   purple = '#752F8A')
 
   if (show_colours) {
-    par(mar = c(1,8,1,1))
-    barplot(rep(1, length(moh_palette)),
-            horiz = T,
-            space = 0.1,
-            col = rev(moh_palette),
-            border = NA,
-            names.arg = paste0(10:1, ' - ', rev(names(moh_palette))),
-            las = 1,
-            xaxt = 'n')
+    graphics::par(mar = c(1,8,1,1))
+    graphics::barplot(base::rep(1, base::length(moh_palette)),
+                      horiz = T,
+                      space = 0.1,
+                      col = base::rev(moh_palette),
+                      border = NA,
+                      names.arg = base::paste0(10:1, ' - ', base::rev(names(moh_palette))),
+                      las = 1,
+                      xaxt = 'n')
   } else {
 
     cols <- c(...)
 
     if (is.null(cols)) return (unname(moh_palette))
+
+    if (is.numeric(cols)) {
+      stopifnot('Selected colour indicies can only be between 1 and 10.' = all(cols <= 10))
+    }
+    if (is.character(cols)){
+      stopifnot('Selected colours do not match the palette. Try moh_colours(show_colours = T)' = all(cols %in% names(moh_palette)))
+    }
 
     unname(moh_palette[cols])
 

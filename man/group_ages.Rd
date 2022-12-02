@@ -7,11 +7,11 @@
 group_ages(ages, by = 1, max_age = 100)
 }
 \arguments{
+\item{ages}{a numeric vector of ages}
+
 \item{by}{age interval breaks}
 
 \item{max_age}{maximum age after which ages are grouped into a max_age+ category e.g 100+}
-
-\item{x}{a numeric vector}
 }
 \value{
 vector of class factor
