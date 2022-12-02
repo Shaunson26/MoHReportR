@@ -5,3 +5,4 @@
 template-screenshot.PNG
 ^.*\.Rproj$
 ^\.Rproj\.user$
+^.github

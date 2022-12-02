@@ -1,16 +1,22 @@
 Package: MoHReportR
 Title: Reporting Paraphernalia For MoH Documents Generated With R
-Version: 0.0.0.9000
+Version: 2022.12.1
 Authors@R: 
     person(given = "Shaun",
            family = "Nielsen",
            role = c("aut", "cre"),
            email = "first.last@example.com")
-Description: Provide RMarkdown templates and other things
+Description: Provide RMarkdown templates, colour palettes and other things for MoH reports.
 License: MIT + file LICENSE
 Encoding: UTF-8
 LazyData: true
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.1.2
+RoxygenNote: 7.2.1
 Suggests: 
-    ggplot2
+    ggplot2,
+    testthat (>= 3.0.0)
+Imports: 
+    base,
+    graphics,
+    rmarkdown
+Config/testthat/edition: 3

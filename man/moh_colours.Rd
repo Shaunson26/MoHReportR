@@ -4,7 +4,7 @@
 \alias{moh_colours}
 \title{NSW goverment branding colours}
 \usage{
-moh_colours(..., show_colours = F)
+moh_colours(..., show_colours = FALSE)
 }
 \arguments{
 \item{...}{Integer or characters vector. See details}
@@ -20,15 +20,15 @@ to see what is available
 }
 \examples{
 # show colours and names
-moh_colours(show_colours = T)
+moh_colours(show_colours = TRUE)
 
 # Return all colours
-moh_colours() -> all ten colours
+moh_colours() # all ten colours
 
 # Return first 4 colours
-moh_colours(1:4) -> first 4 colours
+moh_colours(1:4) # first 4 colours
 
 # Return colours by name
-moh_colours(c('darkBlue', 'red')) -> colours by name ()
+moh_colours(c('darkBlue', 'red')) # colours by name ()
 
 }

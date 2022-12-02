@@ -9,7 +9,7 @@ html_document_moh <- function(...) {
 
   pandoc_resource_path <-
     c("--resource-path",
-      system.file("rmarkdown/templates/moh-basic/resources", package = "MoHReportR")
+      base::system.file("rmarkdown/templates/moh-basic/resources", package = "MoHReportR")
     )
 
   rmarkdown::html_document(template = 'default.html',
