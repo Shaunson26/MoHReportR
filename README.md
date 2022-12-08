@@ -4,6 +4,8 @@
 # MoHReportR
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/Shaunson26/MoHReportR/actions/workflows/r.yml/badge.svg)](https://github.com/Shaunson26/MoHReportR/actions/workflows/r.yml)
 <!-- badges: end -->
 
 The goal of MoHReportR is to provide easy to use templates (colours,
