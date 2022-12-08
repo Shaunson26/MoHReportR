@@ -2,7 +2,9 @@
 ^.Rproj\.user$
 ^LICENSE\.md$
 ^README\.Rmd$
-template-screenshot.PNG
 ^.*\.Rproj$
 ^\.Rproj\.user$
 ^.github
+^_pkgdown\.yml$
+^docs$
+^pkgdown$
