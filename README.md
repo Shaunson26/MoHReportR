@@ -4,6 +4,10 @@
 # MoHReportR
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/Shaunson26/MoHReportR/actions/workflows/r.yml/badge.svg)](https://github.com/Shaunson26/MoHReportR/actions/workflows/r.yml)
+![GitHub R package
+version](https://img.shields.io/github/r-package/v/shaunson26/mohreportr)
 <!-- badges: end -->
 
 The goal of MoHReportR is to provide easy to use templates (colours,
@@ -154,4 +158,4 @@ file menu.
 This will open a R Markdown template from the MoHReportR package. Knit
 this document to see the template output.
 
-![template screenshot](template-screenshot.PNG)
+![template screenshot](man/figures/template-screenshot.PNG)
