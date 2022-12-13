@@ -3,7 +3,11 @@ name: R-CMD-check
 
 # The trigger for this workflow - any push event (every time someone pushes a change to the
 # repository or merges a pull request. This is triggered by a push to every branch
-on: push
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
 
 # A workflow run is made up of one or more jobs, which run in parallel by default.
 jobs:
