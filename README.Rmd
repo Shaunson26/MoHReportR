@@ -15,7 +15,7 @@ knitr::opts_chunk$set(
 )
 ```
 
-# MoHReportR
+# MoHReportR  <img src='man/figures/logo.png' align="right" height="139" />
 
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/Shaunson26/MoHReportR/actions/workflows/r.yml/badge.svg)](https://github.com/Shaunson26/MoHReportR/actions/workflows/r.yml)
